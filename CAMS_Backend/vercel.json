@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index.js" }
+  ],
+  "crons": [
+    {
+      "path": "/send_payment_reminders",
+      "schedule": "30 14 * * *"
+    }
+  ]
+}
